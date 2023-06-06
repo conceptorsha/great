@@ -2,6 +2,7 @@ table 50100 StudentRegistration
 {
     DataClassification = ToBeClassified;
 
+
     fields
     {
         field(1; RegistrationId; Integer)
@@ -39,7 +40,11 @@ table 50100 StudentRegistration
         {
             DataClassification = ToBeClassified;
         }
-        field(9; "Applicati on Date"; DateTime)
+        field(9; "Application id"; Text[20])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(10; qualified; Boolean)
         {
             DataClassification = ToBeClassified;
         }

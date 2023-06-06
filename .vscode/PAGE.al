@@ -1,4 +1,4 @@
-page 50100 studentApplication
+page 50100 "studentApplication List"
 {
     PageType = List;
     ApplicationArea = All;
@@ -25,10 +25,15 @@ page 50100 studentApplication
                 {
 
                 }
+                field("email"; rec."email")
+                {
+
+                }
                 field(qualified; rec.qualified)
                 {
                     ApplicationArea = All;
                 }
+
             }
         }
         area(Factboxes)

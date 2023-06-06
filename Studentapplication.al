@@ -37,7 +37,7 @@ table 50101 "StudentApplication"
         {
             DataClassification = ToBeClassified;
         }
-        field(9; "Applicati on Date"; DateTime)
+        field(9; "Application id"; text[20])
         {
             DataClassification = ToBeClassified;
         }

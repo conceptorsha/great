@@ -11,7 +11,7 @@ page 50101 "student Application card"
         {
             group(GroupName)
             {
-                field("Applicati on Date"; Rec."Applicati on Date")
+                field("Application id"; Rec."Application id")
                 {
                     ApplicationArea = All;
 
@@ -66,7 +66,7 @@ page 50101 "student Application card"
 
                     ObjStudentRegister.Init();
                     ObjStudentRegister.RegistrationId := Id;
-                    ObjStudentRegister."Applicati on Date" := Rec."Applicati on Date";
+                    ObjStudentRegister."Application id" := Rec."Application id";
                     ObjStudentRegister."First Name" := Rec."First Name";
                     ObjStudentRegister.LastName := Rec.LastName;
                     if ObjStudentRegister.Insert(true) then
